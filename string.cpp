@@ -3,19 +3,15 @@
 using namespace std;
 
 int main(){
-    string str;
-    getline(cin, str);
-    cout<<"Initial string is :";
+    string str = "who's you";
     cout << str << endl;
-    // push the string at the end
-    str.push_back('M');
-    cout << "After the push function :";
-    cout << str << endl;
-    // pop funtion 
-    str.pop_back();
-    cout << "After the pop function :";
+    str.resize(4);
     cout << str << endl;
 
+    //Display chapacity of the string
+    cout << str.capacity() << endl;
+    //length depend on resize if you use 
+    cout << str.length() << endl;
      return 0;
 
 
